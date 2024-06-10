@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>TESI - English</title>
+        <link rel="shortcut icon" href="assets/img/tesi_simple.png">
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/style_footer.css" />
+        <link rel="stylesheet" href="assets/css/style_login.css" />
+        <link rel="stylesheet" href="assets/css/style_payments.css" />
+        <link rel="stylesheet" href="assets/css/style_navbar.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+        <style>
+        body {
+            background-image: url('assets/img/texture.jpg');
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: expand;
+            margin: 0;
+            padding: 0;
+        }
+        </style>
+    </head>
+
+    <body>
+        <nav
+            class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow">
+            <div class="container my-4 table-groups">
+                <a class="navbar-brand" href="https://www.tecnm.mx"><img
+                        src="assets/img/tcnm.png" alt="tecnm"
+                        style="height: 40px; margin-left: -100px;"></a>
+                <a class="navbar-brand" href="https://tesi.org.mx"><img
+                        src="assets/img/tesi_simple.png" alt="tesi"
+                        style="height: 40px; margin-left: -40px;"></a>
+                <div class="collapse navbar-collapse justify-content-center"
+                    id="main-nav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html"
+                                style="margin-left: 0px; margin-right: 60px; font-weight: bold; font-size: 25px;">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="home_payments.html"
+                                style="margin-left: 60px; margin-right: 60px; font-weight: bold; font-size: 25px;">Payments</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="home_groups.html"
+                                style="margin-left: 60px; margin-right: 60px; font-weight: bold; font-size: 25px;">Groups</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div style="display: flex;">
+                    <button
+                        class="index_button_login d-flex align-items-center me-2"
+                        role="button" data-bs-toggle="modal"
+                        data-bs-target="#loginModal">
+                        <i class="bi bi-person-fill"
+                            style="margin-right: 10px;font-size: 30px; color: #0056b3;"></i>
+                        <span style="font-size: 20px;">Login</span>
+                    </button>
+                </div>
+
+            </div>
+        </nav>
+
+        <main>
+
+            <div class="container d-flex justify-content-center">
+                <div class="rounded p-3 bg-custom-color"
+                    style="background-color: #ffffff75">
+                    <div class="text-center">
+                        <i class="bi bi-calendar-event custom-color"
+                            style="font-size: 100px; color: #0056b3;"></i>
+                    </div>
+                    <p class="mt-1"
+                        style="font-size: 25px; font-weight: bold; text-align: center; user-select: none;">
+                        The information was last updated on May 5, 2024
+                    </p>
+                </div>
+            </div>
+
+            <div class="card-container">
+                <div class="card">
+                    <img src="assets/img/examen.jpg" class="card-img-top"
+                        alt="payment1">
+                    <div class="card-body">
+                        <h5 class="card-title font-weight-bold">PLACEMENT
+                            EXAM</h5>
+                        <p class="card-text font-weight-bold">See the
+                            requirements to take your positioning exam</p>
+                        <button type="button"
+                            class="btn btn-custom d-block mx-auto"
+                            data-bs-toggle="modal"
+                            data-bs-target="#exam_modal">
+                            <i class="bi bi-info-circle"></i> See information
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="assets/img/inscripcion.jpg" class="card-img-top"
+                        alt="payment2">
+                    <div class="card-body">
+                        <h5 class="card-title font-weight-bold">INSCRIPTION</h5>
+                        <p class="card-text font-weight-bold">Requirements to
+                            register for first time in English language</p>
+                        <button type="button"
+                            class="btn btn-custom d-block mx-auto" 
+                            data-bs-toggle="modal" 
+                            data-bs-target="#ins_modal">
+                            <i class="bi bi-info-circle"></i> See information
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="assets/img/reinscripcion.jpg" class="card-img-top"
+                        alt="payment3">
+                    <div class="card-body">
+                        <h5
+                            class="card-title font-weight-bold">RE-REGISTRATION</h5>
+                        <p class="card-text font-weight-bold">See the
+                            requirements to continue and finish your English
+                            levels</p>
+                        <button type="button" 
+                            class="btn btn-custom d-block mx-auto" 
+                            data-bs-toggle="modal" 
+                            data-bs-target="#reins_modal">
+                            <i class="bi bi-info-circle"></i> See information
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+
+
+        <div class="modal fade" id="loginModal" tabindex="-1"
+            aria-labelledby="loginModalLabel" aria-hidden="true">
+            <div
+                class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg"
+                style="margin-right: auto;">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title" id="loginModalLabel">Log In</h1>
+                        <button type="button" class="btn-close"
+                            data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="username"
+                                    class="form-label">Username</label>
+                                <input type="text" class="form-control"
+                                    id="username"
+                                    placeholder="Enter your username">
+                            </div>
+                            <div class="mb-3">
+                                <label for="password"
+                                    class="form-label">Password</label>
+                                <input type="password" class="form-control"
+                                    id="password"
+                                    placeholder="Enter your password">
+                            </div>
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input"
+                                    id="rememberMe" style="margin-left: -50px;">
+                                <label class="form-check-label"
+                                    for="rememberMe">Remember me</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Log
+                                In</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<div class="modal fade" id="exam_modal" tabindex="-1" aria-labelledby="exam_modalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" style="user-select: none; font-weight: bold; font-size: 25px;">PLACEMENT EXAM
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Woo-hoo, you're reading this text in a modal!</p>
+                <p>Woo-hoo, you're reading this text in a modal!</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+        <div class="modal fade" id="ins_modal" tabindex="-1" aria-labelledby="exam_modalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" style="user-select: none; font-weight: bold; font-size: 25px;">INSCRIPTION
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Woo-hoo, you're reading this text in a modal!</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save
+                            changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="reins_modal" tabindex="-1" aria-labelledby="exam_modalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" style="user-select: none; font-weight: bold; font-size: 25px;">RE-REGISTRATION
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Woo-hoo, you're reading this text in a modal!</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save
+                            changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="assets/img/tesi_simple_black.png" alt="TESI">
+                    </div>
+                    <div class="col-md-6">
+                        <p style="user-select: none;">Derechos reservados para
+                            el Tecnológico de Estudios Superiores de
+                            Ixtapaluca, Carrera de
+                            Sistemas
+                            Computacionales, Área de Inglés; EDOMEX 2024</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+
+    </body>
+</html>

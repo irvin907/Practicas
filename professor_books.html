@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Document Configuration -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ENGLISH WEB</title>
+
+    <!-- Links to external fonts and styles -->
+    <link href="https://fonts.googleapis.com/css2?family=Made+Tomy:wght@900&display=swap" rel="stylesheet" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+
+    <!--Background-->
+    <style>
+        body {
+            background-image: url('assets/img/texture.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+    </style>
+
+    <!-- Header -->
+    <header style="
+        background-color: #d3d3d3;
+        color: rgb(0, 0, 0);
+        padding: 1px 10px 1px;
+        font-size: 16px;
+        ">
+        <!-- Logo and Title -->
+        <a class="logo" style="font-size: 0.8em">
+            <img src="assets/img/tesi.png" alt="Logo TESI" style="width: 150px; height: auto; margin-right: 10px" />
+            <img src="assets/img/tcnm.png" alt="Logo TECNM" style="width: 60px; height: auto" />
+        </a>
+        <h1 class="Nombre-pagina" style="
+            font-size: 40px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: auto;
+            margin-bottom: auto;
+        ">
+            ENGLISH PLATFORM
+        </h1>
+        <a class="gob" style="font-size: 0.8em">
+            <img src="assets/img/edomex.png" alt style="width: 140px; height: auto; margin-right: -10px" />
+            <img src="assets/img/sep.png" alt style="width: 140px; height: auto" />
+        </a>
+    </header>
+
+    <!-- Content -->
+    <div style="
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 20px; ">
+
+        <!-- Home Button -->
+        <a href="homeprofessor.html" class="cerrar btn btn-home" style="margin-left: 10px;">HOME</a>
+
+        <!--Div Tittle-->
+        <div style="text-align: center">
+            <!-- Groups Message -->
+            <h1 class="centrar" style="color: black; margin: 0; margin-top: 20px">
+                UPCOMING SALES
+            </h1>
+
+            <!-- Subtitle -->
+            <p style="
+        color: black;
+        margin: 5px 0 0;
+        font-size: 16px;
+        margin-top: 20px;
+        ">
+                You will be able to see the dates of the following sales along with an approximate schedule
+            </p>
+        </div>
+
+        <!-- Log Out Button -->
+        <a href="cerrar_sesion.php" class="cerrar btn btn-logout" style="margin-right: 10px">LOG OUT</a>
+
+    </div>
+
+    <div class="book-container">
+
+        <div class="book-item" onclick="showDetails('book1')">
+            <img src="assets/img/SPK1.jpg" alt="Book 1">
+            <div class="book-overlay">
+                <h3>Book Speak your mind 1</h3>
+                <p>Macmillan</p>
+
+            </div>
+        </div>
+
+        <div class="book-item">
+            <img src="assets/img/SPK1a.jpg" alt="Book 2">
+            <div class="book-overlay">
+                <h3>Book 2</h3>
+                <p>Publisher: Publisher 2</p>
+                <p>English Level: Intermediate</p>
+                <p>Available: No</p>
+                <p>Quantity: 5</p>
+                <p>Sale Date: 2024-05-15</p>
+            </div>
+        </div>
+
+        <div class="book-item">
+            <img src="assets/img/SPK1b.jpg" alt="Book 2">
+            <div class="book-overlay">
+                <h3>Book 2</h3>
+                <p>Publisher: Publisher 2</p>
+                <p>English Level: Intermediate</p>
+                <p>Available: No</p>
+                <p>Quantity: 5</p>
+                <p>Sale Date: 2024-05-15</p>
+            </div>
+        </div>
+
+        <div class="book-item">
+            <img src="assets/img/SPK2.jpg" alt="Book 2">
+            <div class="book-overlay">
+                <h3>Book 2</h3>
+                <p>Publisher: Publisher 2</p>
+                <p>English Level: Intermediate</p>
+                <p>Available: No</p>
+                <p>Quantity: 5</p>
+                <p>Sale Date: 2024-05-15</p>
+            </div>
+        </div>
+
+        <div class="book-item">
+            <img src="assets/img/SPK2a.jpg" alt="Book 2">
+            <div class="book-overlay">
+                <h3>Book 2</h3>
+                <p>Publisher: Publisher 2</p>
+                <p>English Level: Intermediate</p>
+                <p>Available: No</p>
+                <p>Quantity: 5</p>
+                <p>Sale Date: 2024-05-15</p>
+            </div>
+        </div>
+
+        <div class="book-item">
+            <img src="assets/img/SPK2b.jpg" alt="Book 2">
+            <div class="book-overlay">
+                <h3>Book 2</h3>
+                <p>Publisher: Publisher 2</p>
+                <p>English Level: Intermediate</p>
+                <p>Available: No</p>
+                <p>Quantity: 5</p>
+                <p>Sale Date: 2024-05-15</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="book-details"></div>
+    <script src="assets/js/jsgeneral.js"></script>
+
+</body>
+
+</html>

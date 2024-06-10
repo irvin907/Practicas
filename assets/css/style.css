@@ -1,0 +1,273 @@
+/* MAIN */
+main {
+  margin-top: 100px;
+}
+
+/*Ares Style*/
+
+
+
+/* ------------------HOME------------------ */
+
+/* Styles for the "home" type button */
+.btn-home {
+  background-color: #13a700;
+  /* Fond Color */
+  color: #ffffff;
+  /* Text Color */
+  border: 1px solid #004409;
+  /* Edge */
+  border-radius: 5px;
+  /* Rounded Edges */
+  padding: 10px 20px;
+  /* Internal Spacing */
+  font-size: 16px;
+  /* Font Size */
+  font-weight: bold;
+  cursor: pointer;
+  /* Cursor over button */
+}
+
+/* Style cursor over button */
+.btn-home:hover {
+  background-color: #00bd5e;
+  /* Change background color on hover */
+  border-color: #002b0b;
+  /* Change border color on hover */
+}
+
+
+
+
+
+/* Button styles */
+.report-btn {
+  background-color: #007c04;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.report-btn:hover {
+  background-color: #45a049;
+}
+
+/* ------------------- JAVA SCRIPT MODAL ---------------------- */
+
+
+
+button {
+  font-size: 14px;
+  padding: 10px 25px;
+}
+
+button.cancel-btn {
+  background-color: #ff4d4d;
+  border: black 2px;
+  margin-left: 30px;
+}
+button.cancel-btn:hover {
+  background-color: #a70000;
+  border: black 2px;
+  margin-left: 30px;
+}
+
+.close-img {
+  width: 80px;
+  height: 80px;
+}
+
+/* ------------------- FORM ---------------------- */
+
+/* CSS */
+/* Reset styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+.form-container {
+  max-width: 600px;
+  margin: 50px auto;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.form-group {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+input[type="text"],
+textarea,
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+textarea:focus,
+select:focus {
+  border-color: #007bff;
+}
+
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: url("arrow-down.png") no-repeat right #fff;
+  background-position-x: 95%;
+}
+
+textarea {
+  resize: none;
+}
+
+.buttons {
+  text-align: center;
+  margin-top: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button[type="reset"] {
+  margin-left: 10px;
+  background-color: #dc3545;
+}
+
+button[type="reset"]:hover {
+  background-color: #bd2130;
+}
+
+/* Animation for label */
+input[type="text"] + label,
+textarea + label {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  color: #999;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+input[type="text"]:focus + label,
+textarea:focus + label,
+select:focus + label {
+  top: -10px;
+  font-size: 12px;
+  color: #007bff;
+}
+
+/*---------- Mail ----------*/
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 50px;
+}
+
+th,
+td {
+  border: 6px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+/* ----------- BOOKS --------------*/
+.book-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.book-item {
+  position: relative;
+  margin: 20px;
+}
+
+.book-item img {
+  width: 200px;
+  height: 250px;
+  border: 1px solid #ccc;
+  transition: transform 0.3s ease;
+}
+
+.book-item img:hover {
+  transform: scale(1.1);
+}
+
+.book-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  text-align: center;
+  width: 150px;
+  height: 200px;
+  user-select: none;
+}
+
+.book-item:hover .book-overlay {
+  opacity: 1;
+}
+
+#book-details {
+  background-color: #f8f8f8;
+  border: solid black 2px;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 20px auto;
+  max-width: 300px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,55 @@
+main {
+  margin-top: 100px;
+}
+.centered {
+            text-align: center !important;
+            vertical-align: middle !important;
+        }
+
+
+        .custom-table {
+            font-size: 25px;
+            width: 92%;
+            background-color: #f8f9fa;
+            border: 3px solid #000;
+            user-select: none;
+        }
+
+        .custom-table thead th {
+            background-color: #13497c;
+            color: #fff;
+            border: 3px solid #000000;
+        }
+
+        .custom-table tbody tr {
+            border: 1px solid #000000;
+            text-align: center;
+        }
+
+        .custom-table tbody td {
+            background-color: #ffffff;
+            border: 3px solid black;
+        }
+
+        .custom-table tbody tr:hover td {
+            background-color: #7291a0;
+            color: #fff;
+            cursor: default;
+        }
+
+        .container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 50px;
+  margin-left: 70px;
+}
+

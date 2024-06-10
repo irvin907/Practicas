@@ -1,0 +1,9 @@
+/* Navbar */
+.navbar {
+  background-color: #ffffff;
+  max-height: 90px;
+}
+
+.navbar-nav .nav-link {
+  font-size: 18px;
+}

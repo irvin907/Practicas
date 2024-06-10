@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Document Configuration -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ENGLISH WEB</title>
+
+    <!-- Links to external fonts and styles -->
+    <link href="https://fonts.googleapis.com/css2?family=Made+Tomy:wght@900&display=swap" rel="stylesheet" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- Internal Styles -->
+    <style>
+        body {
+            background-image: url("assets/img/texture.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            margin: 50px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        th,
+        td {
+            border: 2px solid #000000;
+            padding: 12px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #444;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f8f8f8;
+        }
+
+        tr:hover {
+            background-color: #e0e0e0;
+        }
+
+        td button,
+        .btn-open {
+            background-color: #007bff;
+            color: #ffffff;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        td button:hover,
+        .btn-open:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header style="
+        background-color: #d3d3d3;
+        color: rgb(0, 0, 0);
+        padding: 1px 10px 1px;
+        font-size: 16px;
+        ">
+        <!-- Logo and Title -->
+        <a class="logo" style="font-size: 0.8em">
+            <img src="assets/img/tesi.png" alt="Logo TESI" style="width: 150px; height: auto; margin-right: 10px" />
+            <img src="assets/img/tcnm.png" alt="Logo TECNM" style="width: 60px; height: auto" />
+        </a>
+        <h1 class="Nombre-pagina" style="font-size: 40px; margin: auto">
+            ENGLISH PLATFORM
+        </h1>
+        <a class="gob" style="font-size: 0.8em">
+            <img src="assets/img/edomex.png" alt="Logo Edomex" style="width: 140px; height: auto; margin-right: -10px" />
+            <img src="assets/img/sep.png" alt="Logo SEP" style="width: 140px; height: auto" />
+        </a>
+    </header>
+
+    <!-- Content -->
+    <div style="
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        ">
+        <!-- Home Button -->
+        <a href="homeprofessor.html" class="cerrar btn btn-home" style="margin-left: 10px">HOME</a>
+
+        <!--Div Title-->
+        <div style="text-align: center">
+            <!-- Groups Message -->
+            <h1 class="centrar" style="color: black; margin: 0; margin-top: 20px">
+                RECEIVED MESSAGES
+            </h1>
+
+            <!-- Subtitle -->
+            <p style="
+            color: black;
+            margin: 5px 0 0;
+            font-size: 16px;
+            margin-top: 20px;
+            ">
+                Here you can see messages from coordination for
+                informational
+                purposes.
+            </p>
+        </div>
+
+        <!-- Log Out Button -->
+        <a href="cerrar_sesion.php" class="cerrar btn btn-logout" style="margin-right: 10px">LOG OUT</a>
+    </div>
+
+    <!-- Message Table -->
+    <table>
+        <thead>
+            <tr>
+                <th>Author</th>
+                <th>Affair</th>
+                <th>Date</th>
+                <th>Read</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Messages -->
+            <tr>
+                <td>Coordination</td>
+                <td>Meeting Tomorrow</td>
+                <td>27/04/2024</td>
+                <td>No</td>
+                <td>
+                    <button onclick="markasread(this)">Mark as read</button>
+                    <button class="btn-logout" onclick="deletemessage(this)">
+                        Delete
+                    </button>
+                    <button class="btn-abrir" onclick="openPopup()">Open</button>
+                    <!-- Nuevo botón para abrir ventana emergente -->
+                </td>
+            </tr>
+            <!-- Add more rows for messages -->
+        </tbody>
+    </table>
+
+    <!-- JavaScript Functions -->
+    <script>
+        function markasread(btn) {
+            // Find the row message
+            var fila = btn.closest("tr");
+            // Change the column to "Mark as read"
+            fila.querySelector("td:nth-child(4)").textContent = "Sí";
+        }
+
+        function deletemessage(btn) {
+            // Find the column and delete
+            var fila = btn.closest("tr");
+            fila.remove();
+        }
+
+        function openPopup() {
+            // Aquí se puede implementar la lógica para mostrar el contenido del mensaje en una ventana emergente
+            alert("Contenido del mensaje...");
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,134 @@
+main {
+  margin-top: 70px;
+  margin-left: -10px;;
+}
+
+.centered {
+        text-align: center !important;
+        vertical-align: middle !important;
+      }
+
+      .custom-table {
+        font-size: 18px;
+        width: 92%;
+        background-color: #f8f9fa;
+        border: 3px solid #000;
+        user-select: none;
+        margin-left: 100px;
+      }
+
+      .custom-table thead th {
+        background-color: #8f2d00;
+        color: #fff;
+        border: 3px solid #000000;
+      }
+
+      .custom-table tbody tr {
+        border: 1px solid #000000;
+        text-align: center;
+      }
+
+      .custom-table tbody td {
+        background-color: #ffffff;
+        border: 3px solid black;
+      }
+
+      .custom-table tbody tr:hover td {
+        background-color: #ffd29742;
+        color: #000000;
+        cursor: default;
+    }
+
+        .container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 50px;
+}
+
+.report-btn {
+    background-color: #007c04;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.report-btn:hover {
+    background-color: #45a049;
+}
+
+/* Modal styles */
+.modal-container {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.603);
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    pointer-events: none;
+    opacity: 0;  
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    transition: opacity 0.3s ease;
+}
+
+.show {
+    pointer-events: auto;
+    opacity: 1;
+}
+
+.modal {
+    background-color: #fff;
+    width: 600px;
+    max-width: 100%;
+    padding: 30px 50px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.modal h1 {
+    margin: 0;
+}
+
+.modal p {
+    opacity: 0.7;
+    font-size: 14px;
+}
+
+button {
+    font-size: 14px;
+    padding: 10px 25px;
+}
+
+button.cancel-btn {
+    background-color: #ff4d4d;
+    border: black 2px;
+    margin-left: 30px;
+}
+button.cancel-btn:hover {
+    background-color: #a70000;
+    border: black 2px;
+    margin-left: 30px;
+}
+
+
+.close-img {
+    width: 80px;
+    height: 80px;
+}

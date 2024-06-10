@@ -1,0 +1,56 @@
+main {
+  margin-top: 100px;
+}
+
+body {
+  background-image: url("assets/img/texture.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: expand;
+  margin: 0;
+  padding: 0;
+}
+
+#carouselExampleIndicators {
+  width: 900px;
+  height: 800px;
+  margin-left: 3%;
+  margin-top: 1.5%;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 50px;
+  margin: -35px;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  background-color: transparent;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 40px;
+  height: 100px;
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+  width: 50px;
+  height: 120px;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 800px;
+}
+
+.carousel-indicators {
+  margin-bottom: -20px;
+  width: 550px;
+}
+
+.carousel-indicators .active {
+  background-color: #000000;
+}
